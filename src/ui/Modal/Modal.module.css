@@ -1,0 +1,35 @@
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    inset: 0;
+    background-color: #3c3c3f85;
+    padding: 5px;
+}
+
+.content {
+    padding: 1.875rem;
+    border: 1px solid #7a7a7a;
+    background-color: #2f2f2f;
+    position: relative;
+    border-radius: 5px;
+}
+
+.modalCloseButton {
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-end: 0;
+    width: 2.75rem;
+    height: 2.75rem;
+    color: #afafaf;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.modalCloseButton>svg {
+    width: 1rem;
+    height: 1rem;
+}

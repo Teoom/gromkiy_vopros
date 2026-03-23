@@ -1,0 +1,165 @@
+.formWrapper {
+    width: 100%;
+    max-width: 37.5rem;
+    font-family: var(--roboto);
+}
+
+.formBookingTitle {
+    margin: 0;
+    color: var(--base-white);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.42;
+
+}
+
+.formBookingQuestTitle {
+    font-size: 1.25rem;
+    line-height: 1.66;
+    font-weight: 600;
+    color: #ffbd19;
+    margin: 0;
+}
+
+.formBookingInfo {
+    height: 3.75rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 1px solid #666;
+    background-color: hsla(0, 0%, 100%, .15);
+    border-radius: 4px;
+}
+
+
+
+.infoItem {
+    color: var(--base-white);
+    padding: .5rem;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.formBookingInfo>.infoItem:nth-child(2) {
+    border-left: 1px solid #666;
+    border-right: 1px solid #666;
+}
+
+.infoLabel {
+    color: #a1a1a1;
+    font-size: .75rem;
+}
+
+.infoValue {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.form {
+    margin-block-start: 1rem;
+}
+
+.formGroup {
+    display: flex;
+
+    flex-wrap: wrap;
+    column-gap: 1.875rem;
+    row-gap: 1rem;
+    margin: 0;
+    margin-block-end: 1rem;
+    padding: 0;
+    border: none;
+}
+
+.formGroup>* {
+    /* flex-basis: 47.5%; */
+    flex: 1 0 46.5%;
+}
+
+.formField {
+    width: 100%;
+    font-size: .875rem;
+    color: var(--base-white);
+    background-color: transparent;
+    padding: 6px 12px;
+    border-radius: 3px;
+       border: 1px solid #666;
+}
+
+.formFieldError {
+    border: 1px solid #a94442;
+    background-color: transparent;
+    border-radius: 3px;
+}
+
+.formField:focus-visible {
+    color: var(--black);
+    background-color: var(--base-white);
+}
+
+.formField:focus {
+    background-color: var(--base-white);
+    outline: none;
+}
+
+.form>.formField:last-of-type {
+    margin-block: 1rem;
+}
+
+.submitButton {
+    width: 100%;
+    height: 2.875rem;
+    background-image: linear-gradient(#ffbd19, #f69600);
+    font-size: 1.125rem;
+    color: var(--black);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.submitButton:hover {
+    background-image: linear-gradient(#ffcc4c, #ffac2a)
+}
+
+.submitButton:disabled {
+    user-select: none;
+    cursor: not-allowed;
+    opacity: .65;
+}
+
+.formError {
+    font-size: 1rem;
+    color: #a94442;
+    line-height: 1.25;
+}
+
+.formAgreement {
+    margin-block-start: 1rem;
+    font-size: .75rem;
+    color: #a1a1a1;
+    line-height: 1.66;
+
+}
+
+.formAgreementLink {
+    color: #d198e8;
+    text-decoration: none;
+    border-color: transparent;
+}
+
+.formAgreementLink:hover {
+    color: #d198e8;
+    text-decoration: underline;
+    transition: all .3s;
+}
+
+.commentFieldButton {
+    color: #d198e8;
+    font-size: 0.875rem;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px dashed #d198e8;
+    padding: 0;
+    margin-block-end: 1rem;
+    cursor: pointer;
+}

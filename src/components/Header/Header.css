@@ -1,0 +1,17 @@
+.header {
+    padding-block: 15px;
+    height: 100px;
+    background-color: var(--light-dark);
+    position: relative;
+    z-index: 10;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
